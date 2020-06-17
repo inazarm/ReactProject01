@@ -34,8 +34,8 @@ jobs:
     - name: Build React App
       run: yarn build
       
-    - name: Install Surge
-      run: npm install --g Surge
+    - name: Install surge
+      run: npm install -g surge
       
     - name: Deploy to Surge
       run: surge ./build reactproject01.surge.su ${{ secrets.SURGE_TOKEN}}
